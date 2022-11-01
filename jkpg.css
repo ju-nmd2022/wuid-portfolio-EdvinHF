@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+.cointainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas:
+    "header header header header header header header header header"
+    "intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro";
+}
+.header {
+  background-color: aqua;
+  grid-area: header;
+}
+.intro {
+  background-color: blue;
+  grid-area: intro;
+}
+.content {
+  background-color: blueviolet;
+  grid-area: content;
+}
+.footer {
+  background-color: brown;
+  grid-area: footer;
+}
