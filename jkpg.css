@@ -1,31 +1,70 @@
+@font-face {
+  font-family: "hi";
+  src: url(/fonts/paraaminobenzoic.ttf) format("truetype");
+}
+
 * {
   margin: 0;
+  font-family: "hi", fallback, sans-serif;
 }
-.cointainer {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 100px 200px 200px 200px 100px 100px 800px 100px;
   grid-template-areas:
-    "header header header header header header header header header"
-    "intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro";
+    "header header header header header header header header header header"
+    "menu menu menu menu menu menu menu menu menu menu"
+    "intro intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro intro"
+    "intro intro intro intro intro intro intro intro intro intro"
+    "contentl contentl contentl contentl contentl contentr contentr contentr contentr contentr"
+    "footer footer footer footer footer footer footer footer footer footer";
 }
 .header {
   background-color: aqua;
   grid-area: header;
+  height: 80px;
+  text-align: center;
+}
+h1 {
+  padding-top: 25px;
+}
+
+.menu {
+  display: flex;
+  background-color: bisque;
+  grid-area: menu;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  font-size: 20px;
+}
+.menu :hover {
+  color: rgb(94, 94, 94);
+  cursor: pointer;
 }
 .intro {
   background-color: blue;
   grid-area: intro;
+  display: grid;
+  grid-template-columns: fit-content;
 }
-.content {
+img {
+  width: 100%;
+}
+.contentl {
   background-color: blueviolet;
-  grid-area: content;
+  grid-area: contentl;
+  text-align: center;
 }
+.contentr {
+  background-color: rgb(73, 226, 43);
+  grid-area: contentr;
+  text-align: center;
+}
+
 .footer {
   background-color: brown;
   grid-area: footer;
