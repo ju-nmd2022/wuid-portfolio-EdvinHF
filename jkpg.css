@@ -6,8 +6,6 @@
 * {
   margin: 0;
   font-family: "hi", fallback, sans-serif;
-  text-decoration: none;
-  text-decoration-color:none;
 }
 .container {
   display: grid;
@@ -40,15 +38,12 @@ h1 {
   column-gap: 5%;
   font-size: 20px;
   color: rgba(249, 255, 255, 0.979) !important;
-  text-decoration: none !important;
   
 }
 img{
   height:80vh;
 }
-.link{
-  text-decoration: none !important;
-}
+
 .menu :hover {
   color: rgb(94, 94, 94);
   cursor: pointer;
@@ -90,4 +85,8 @@ h3{
 }
 p{
   padding-bottom: 5%;
+}
+a{
+  text-decoration: none;
+  color: rgb(151, 151, 151);
 }
