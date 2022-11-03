@@ -6,27 +6,26 @@
 * {
   margin: 0;
   font-family: "hi", fallback, sans-serif;
+  text-decoration: none;
+  text-decoration-color:none;
 }
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 100px 200px 200px 200px 100px 100px 800px 100px;
+  grid-template-rows: 80px 100px  80vh 75vh 4vh;
   grid-template-areas:
     "header header header header header header header header header header"
     "menu menu menu menu menu menu menu menu menu menu"
-    "intro intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro intro"
-    "intro intro intro intro intro intro intro intro intro intro"
     "intro intro intro intro intro intro intro intro intro intro"
     "contentl contentl contentl contentl contentl contentr contentr contentr contentr contentr"
     "footer footer footer footer footer footer footer footer footer footer";
 }
 .header {
-  background-color: aqua;
+  background-color: rgb(153, 153, 153);
   grid-area: header;
   height: 80px;
   text-align: center;
+  color: black;
 }
 h1 {
   padding-top: 25px;
@@ -34,17 +33,27 @@ h1 {
 
 .menu {
   display: flex;
-  background-color: bisque;
+  background-color: rgb(63, 63, 63);
   grid-area: menu;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  column-gap: 5%;
   font-size: 20px;
+  color: rgba(249, 255, 255, 0.979) !important;
+  text-decoration: none !important;
+  
+}
+img{
+  height:80vh;
+}
+.link{
+  text-decoration: none !important;
 }
 .menu :hover {
   color: rgb(94, 94, 94);
   cursor: pointer;
 }
+
 .intro {
   background-color: blue;
   grid-area: intro;
@@ -55,17 +64,30 @@ img {
   width: 100%;
 }
 .contentl {
-  background-color: blueviolet;
+  background-color: rgb(209, 209, 209);
   grid-area: contentl;
   text-align: center;
+  padding: 5%;
+
 }
 .contentr {
-  background-color: rgb(73, 226, 43);
+  background-color: rgb(209, 209, 209);
   grid-area: contentr;
   text-align: center;
+  padding: 5%;
 }
 
 .footer {
-  background-color: brown;
+  background-color: rgb(218, 218, 218);
   grid-area: footer;
+  text-align: center;
+  padding-top: 40px;
+  height: fit-content;
+}
+h3{
+  padding-top: 5%;
+
+}
+p{
+  padding-bottom: 5%;
 }
