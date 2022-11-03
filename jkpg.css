@@ -1,6 +1,6 @@
 @font-face {
   font-family: "hi";
-  src: url(/fonts/paraaminobenzoic.ttf) format("truetype");
+  src: url(fonts/paraaminobenzoic.ttf) format("truetype");
 }
 
 * {
