@@ -10,7 +10,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 100px 80vh 75vh 50px;
+  grid-template-rows: 80px 100px auto 75vh 50px;
   grid-template-areas:
     "header header header header header header header header header header"
     "menu menu menu menu menu menu menu menu menu menu"
@@ -40,7 +40,8 @@ h1 {
   color: rgba(249, 255, 255, 0.979) !important;
 }
 img {
-  height: 80vh;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .menu :hover {
@@ -49,14 +50,11 @@ img {
 }
 
 .intro {
-  background-color: blue;
   grid-area: intro;
   display: grid;
   grid-template-columns: fit-content;
 }
-img {
-  width: 100%;
-}
+
 .contentl {
   background-color: rgb(209, 209, 209);
   grid-area: contentl;
