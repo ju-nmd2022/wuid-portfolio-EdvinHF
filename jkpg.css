@@ -10,7 +10,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 100px  80vh 75vh 4vh;
+  grid-template-rows: 80px 100px 80vh 75vh 4vh;
   grid-template-areas:
     "header header header header header header header header header header"
     "menu menu menu menu menu menu menu menu menu menu"
@@ -38,10 +38,9 @@ h1 {
   column-gap: 5%;
   font-size: 20px;
   color: rgba(249, 255, 255, 0.979) !important;
-  
 }
-img{
-  height:80vh;
+img {
+  height: 80vh;
 }
 
 .menu :hover {
@@ -63,7 +62,6 @@ img {
   grid-area: contentl;
   text-align: center;
   padding: 5%;
-
 }
 .contentr {
   background-color: rgb(209, 209, 209);
@@ -79,14 +77,31 @@ img {
   padding-top: 40px;
   height: fit-content;
 }
-h3{
+h3 {
   padding-top: 5%;
-
 }
-p{
+p {
   padding-bottom: 5%;
 }
-a{
+a {
   text-decoration: none;
   color: rgb(151, 151, 151);
+}
+p,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 100px 80vh 75vh 75vh 100px;
+    grid-template-areas:
+      "header header header header header header header header header header"
+      "menu menu menu menu menu menu menu menu menu menu"
+      "intro intro intro intro intro intro intro intro intro intro"
+      "contentl contentl contentl contentl contentl contentl contentl contentl contentl contentl"
+      "contentr contentr contentr contentr contentr contentr contentr contentr contentr contentr"
+      "footer footer footer footer footer footer footer footer footer footer";
+  }
 }
