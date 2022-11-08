@@ -6,6 +6,7 @@
 * {
   margin: 0;
   font-family: "hi", fallback, sans-serif;
+  scroll-behavior: smooth;
 }
 .container {
   display: grid;
