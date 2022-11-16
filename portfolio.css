@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "FTP";
+  src: url(fonts/SQR721BI.TTF) format("truetype");
+}
+@font-face {
+  font-family: "Maintext";
+  src: url(fonts/verdana.ttf);
+}
+* {
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8vh 8vh auto auto auto 8vh;
+  grid-template-areas:
+    "header header header header"
+    "rubrik rubrik rubrik rubrik"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+  min-height: 100vh;
+  row-gap: 3%;
+  font-family: "Maintext";
+}
+.rubrik {
+  grid-area: rubrik;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+.footer {
+  grid-area: footer;
+}
+.main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: repeat(
+    auto-fit,
+    400px
+  ); /*I took this from a workshop*/
+  gap: 3%;
+  justify-content: center;
+}
+
+.pcontent {
+  background-color: rgb(202, 202, 202);
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px 1px rgba(2, 2, 2, 0.3);
+  cursor: pointer;
+}
+.pcontent:hover {
+  -webkit-filter: blur(5px);
+  border-width: 1px;
+  border-color: black;
+}
+.thumbnail {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". edvin . menu menu .";
+  box-shadow: 2px 2px 10px 2px rgba(2, 2, 2, 0.3);
+}
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  font-weight: bolder;
+}
+.Edvin {
+  grid-area: edvin;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  font-family: "FTP";
+}
+
+#learn {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+#menu {
+  text-decoration: none;
+  color: black;
+}
+.popup {
+  background-color: rgba(3, 33, 32, 0.6);
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  visibility: hidden;
+  display: grid;
+  grid-template-rows: 8vh 50vh 16vh;
+  grid-template-areas:
+    "rubrik2"
+    "img"
+    "des";
+  align-items: center;
+}
+.rubrik2 {
+  grid-area: rubrik2;
+}
+.img {
+  display: grid;
+  grid-area: img;
+  height: 60vh;
+}
+.des {
+  grid-area: des;
+  display: grid;
+}
+.openpopup {
+  visibility: visible;
+}
+@media only screen and (max-width: 450px) {
+  .main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(
+      auto-fit,
+      300px
+    ); /*I took this from a workshop*/
+    gap: 3%;
+    justify-content: center;
+  }
+  .pcontent {
+    background-color: rgb(202, 202, 202);
+    height: 300px;
+    border-radius: 10px;
+  }
+  .thumbnail {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+}

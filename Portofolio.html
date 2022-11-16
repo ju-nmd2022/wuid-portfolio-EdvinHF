@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="Edvin">
+          <h1>EDVIN</h1>
+        </div>
+        <div id="menu" class="menu">
+          <div class="home">
+            <a id="menu" href="Index.html">Home</a>
+          </div>
+          <div class="about">About</div>
+          <div class="portfolio">
+            <a id="menu" href="Portofolio.html">Portfolio</a>
+          </div>
+          <div class="contact">Contact</div>
+        </div>
+      </div>
+      <div class="rubrik">
+        <h2>Here is some of my work</h2>
+      </div>
+      <main class="main">
+        <div class="pcontent">
+          <img
+            onclick="openPopup()"
+            class="thumbnail"
+            src="Pimgs/naruto.svg"
+            alt=""
+          />
+        </div>
+        <div class="pcontent">
+          <img class="thumbnail" src="Pimgs/hf.svg" alt="" />
+        </div>
+        <div class="pcontent">
+          <img class="thumbnail" src="Pimgs/got.svg" alt="" />
+        </div>
+        <div class="pcontent">
+          <img class="thumbnail" src="Pimgs/Final.logga.svart.svg" alt="" />
+        </div>
+        <div class="pcontent">
+          <img class="thumbnail" src="Pimgs/vattensvamp copy.jpg" alt="" />
+        </div>
+      </main>
+      <footer class="footer"></footer>
+      <div class="popup" id="popup">
+        <h2 class="rubkrik2">naruto stylisation</h1>
+        <img class="img"src="/Pimgs/hf.svg" alt="" />         
+        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Quos minima ea quod quae impedit consectetur dolores 
+             quia sequi ullam vero! Aut, vitae optio. Corporis vero 
+             error cumque ullam eos dolore!</p>
+      </div>
+    </div>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        popup.classList.add("openpopup");
+      }
+    </script>
+  </body>
+</html>
