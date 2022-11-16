@@ -112,12 +112,14 @@
   grid-row-end: 7;
   visibility: hidden;
   display: grid;
-  grid-template-rows: 8vh 50vh 16vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 8vh 20vh 16vh;
   grid-template-areas:
     "rubrik2"
     "img"
     "des";
-  align-items: center;
+  justify-items: center;
+  padding: 5%;
 }
 .rubrik2 {
   grid-area: rubrik2;
@@ -126,10 +128,13 @@
   display: grid;
   grid-area: img;
   height: 60vh;
+  margin-top: -200px;
 }
 .des {
   grid-area: des;
   display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .openpopup {
   visibility: visible;
