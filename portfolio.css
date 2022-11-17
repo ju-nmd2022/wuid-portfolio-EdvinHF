@@ -105,7 +105,7 @@
   color: black;
 }
 .popup {
-  background-color: rgba(3, 33, 32, 0.6);
+  background-color: rgba(255, 255, 255, 1);
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -113,13 +113,13 @@
   visibility: hidden;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 8vh 20vh 16vh;
+  grid-template-rows: 8vh 600px 16vh;
   grid-template-areas:
     "rubrik2"
     "img"
     "des";
   justify-items: center;
-  padding: 5%;
+  padding: 10%;
 }
 .rubrik2 {
   grid-area: rubrik2;
@@ -127,14 +127,13 @@
 .img {
   display: grid;
   grid-area: img;
-  height: 60vh;
-  margin-top: -200px;
+  width: 400px;
 }
 .des {
   grid-area: des;
   display: grid;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 20%; 
+  margin-right: 20%;
 }
 .openpopup {
   visibility: visible;
