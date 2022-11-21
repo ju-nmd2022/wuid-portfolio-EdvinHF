@@ -102,6 +102,22 @@
   color: black;
 }
 
+.rubrik2 {
+  grid-area: rubrik2;
+}
+.img {
+  display: grid;
+  grid-area: img;
+  height: 60vh;
+  margin-top: -200px;
+}
+.des {
+  grid-area: des;
+  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 @media only screen and (max-width: 450px) {
   .main {
     display: grid;
