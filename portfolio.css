@@ -37,10 +37,7 @@
 .main {
   display: grid;
   grid-area: main;
-  grid-template-columns: repeat(
-    auto-fit,
-    400px
-  ); /*I took this from a workshop*/
+  grid-template-columns: repeat(auto-fit, 400px);
   gap: 3%;
   justify-content: center;
 }
@@ -104,185 +101,12 @@
   text-decoration: none;
   color: black;
 }
-.popup1 {
-  background-color: rgba(255, 255, 255, 1);
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  visibility: hidden;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 600px 16vh;
-  grid-template-areas:
-    "rubrik1"
-    "img"
-    "des";
-  justify-items: center;
-  padding: 10%;
-}
-.openpopup1{
-  visibility: visible;
-}
-.rubrik1 {
-  grid-area: rubrik1;
-}
-.img1 {
-  display: grid;
-  grid-area: img;
-  width: 400px;
-}
-.des1 {
-  grid-area: des;
-  display: grid;
-  margin-left: 20%; 
-  margin-right: 20%;
-}
-.popup2 {
-  background-color: rgba(255, 255, 255, 1);
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  visibility: hidden;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 600px 16vh;
-  grid-template-areas:
-    "rubrik1"
-    "img"
-    "des";
-  justify-items: center;
-  padding: 10%;
-}
-.openpopup2 {
-  visibility: visible;
-}
-.rubrik2 {
-  grid-area: rubrik1;
-}
-.img2 {
-  display: grid;
-  grid-area: img;
-  width: 400px;
-}
-.des2 {
-  grid-area: des;
-  display: grid;
-  margin-left: 20%; 
-  margin-right: 20%;
-}
-.popup3 {
-  background-color: rgba(255, 255, 255, 1);
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  visibility: hidden;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 600px 16vh;
-  grid-template-areas:
-    "rubrik1"
-    "img"
-    "des";
-  justify-items: center;
-  padding: 10%;
-}
-.openpopup3 {
-  visibility: visible;
-}
-.rubrik3 {
-  grid-area: rubrik1;
-}
-.img3 {
-  display: grid;
-  grid-area: img;
-  width: 400px;
-}
-.des3 {
-  grid-area: des;
-  display: grid;
-  margin-left: 20%; 
-  margin-right: 20%;
-}
-.popup4 {
-  background-color: rgba(255, 255, 255, 1);
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  visibility: hidden;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 600px 16vh;
-  grid-template-areas:
-    "rubrik1"
-    "img"
-    "des";
-  justify-items: center;
-  padding: 10%;
-}
-.openpopup4 {
-  visibility: visible;
-}
-.rubrik4 {
-  grid-area: rubrik1;
-}
-.img4 {
-  display: grid;
-  grid-area: img;
-  width: 400px;
-}
-.des4 {
-  grid-area: des;
-  display: grid;
-  margin-left: 20%; 
-  margin-right: 20%;
-}
-.popup5 {
-  background-color: rgba(255, 255, 255, 1);
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 7;
-  visibility: hidden;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8vh 600px 16vh;
-  grid-template-areas:
-    "rubrik1"
-    "img"
-    "des";
-  justify-items: center;
-  padding: 10%;
-}
-.openpopup5 {
-  visibility: visible;
-}
-.rubrik5 {
-  grid-area: rubrik1;
-}
-.img5 {
-  display: grid;
-  grid-area: img;
-  width: 400px;
-}
-.des5 {
-  grid-area: des;
-  display: grid;
-  margin-left: 20%; 
-  margin-right: 20%;
-}
 
 @media only screen and (max-width: 450px) {
   .main {
     display: grid;
     grid-area: main;
-    grid-template-columns: repeat(
-      auto-fit,
-      300px
-    ); /*I took this from a workshop*/
+    grid-template-columns: repeat(auto-fit, 300px);
     gap: 3%;
     justify-content: center;
   }
