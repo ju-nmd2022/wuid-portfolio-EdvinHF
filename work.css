@@ -48,17 +48,24 @@
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15vh 500px 300px;
+  grid-template-rows: 1vh 15vh 500px 300px;
   grid-template-areas:
-    "rubrik rubrik"
-    "img img"
-    "text text";
+    "return . "
+    " rubrik rubrik"
+    " img img"
+    " text text";
   margin-right: 5%;
   margin-left: 5%;
   gap: 5%;
   justify-items: center;
 }
-
+.return-button {
+  grid-area: return;
+  width: 300px;
+}
+.return {
+  width: 15px;
+}
 .IMG {
   grid-area: img;
   display: flex;
