@@ -79,7 +79,7 @@
 }
 .welcome {
   animation-name: hover;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
