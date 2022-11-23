@@ -9,6 +9,10 @@
 * {
   margin: 0px;
 }
+html,body{
+  overflow: hidden;
+
+}
 
 .container {
   display: grid;
@@ -79,24 +83,55 @@
 }
 .welcome {
   animation-name: hover;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  text-shadow: 2px 2px 2px rgba(2, 2, 2, 0.3);
+
+}
+.wrapper{
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start:1 ;
+  grid-row-end: 5;
+  animation-name:slide ;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-top: 0;
+  border-bottom: 0;
+  
+}
+@keyframes slide{
+  0% {
+    transform: translateY(0);
+  
+  }
+
+  100% {
+    transform: translateX(-100%);
+    
+  }
 }
 @keyframes hover {
   0% {
     transform: translateY(0);
-    text-shadow: 2px 2px 2px rgba(2, 2, 2, 0.3);
+  
   }
 
   50% {
-    transform: translateY(-10%);
-    text-shadow: 10px 5px 5px rgba(2, 2, 2, 0.3);
+    transform: translateY(-15%);
+    
   }
 
   100% {
     transform: translateY(0);
-    text-shadow: 2px 2px 2px rgba(2, 2, 2, 0.3);
+    
   }
 }
 .Text {
@@ -105,6 +140,7 @@
   display: flex;
   flex-direction: column;
   gap: 5%;
+
 }
 h1 {
   font-weight: 3000px;
@@ -163,5 +199,9 @@ p {
     flex-direction: column;
     gap: 5%;
     justify-content: flex-start;
+  }
+  html,body{
+    overflow:visible;
+  
   }
 }
