@@ -9,9 +9,9 @@
 * {
   margin: 0px;
 }
-html,body{
+html,
+body {
   overflow: hidden;
-
 }
 
 .container {
@@ -87,17 +87,16 @@ html,body{
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   text-shadow: 2px 2px 2px rgba(2, 2, 2, 0.3);
-
 }
-.wrapper{
+.wrapper {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start:1 ;
+  grid-row-start: 1;
   grid-row-end: 5;
-  animation-name:slide ;
-  animation-duration: 1s;
+  animation-name: slide;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   border-width: 1px;
@@ -105,33 +104,56 @@ html,body{
   border-style: solid;
   border-top: 0;
   border-bottom: 0;
-  
+  margin-bottom: -500px;
+  justify-items: center;
 }
-@keyframes slide{
+.load {
+  width: 55px;
+  height: 55px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation-name: rotate;
+  margin-top: 45vh;
+  animation-duration: 2s;
+}
+
+@keyframes rotate {
   0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  50% {
     transform: translateY(0);
-  
   }
 
   100% {
     transform: translateX(-100%);
-    
   }
 }
 @keyframes hover {
   0% {
     transform: translateY(0);
-  
   }
 
   50% {
     transform: translateY(-15%);
-    
   }
 
   100% {
     transform: translateY(0);
-    
   }
 }
 .Text {
@@ -140,7 +162,6 @@ html,body{
   display: flex;
   flex-direction: column;
   gap: 5%;
-
 }
 h1 {
   font-weight: 3000px;
@@ -200,8 +221,8 @@ p {
     gap: 5%;
     justify-content: flex-start;
   }
-  html,body{
-    overflow:visible;
-  
+  html,
+  body {
+    overflow: visible;
   }
 }
